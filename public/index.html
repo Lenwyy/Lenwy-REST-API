@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Lenwy REST API</title>
+
+  <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+</head>
+<body>
+  <!-- Bagian Popup -->
+
+  <!-- Popup -->
+  <div id="popup-backdrop" class="popup-backdrop"></div>
+  <div id="popup" class="popup">
+    <h2>Selamat Datang Di Lenwy API!</h2>
+    <p>Lenwy API Merupakan Sebuah Website REST API Gratis Yang Tidak Memungut Biaya Sama Sekali, Saya Akan Senang Bila Anda Berniat Untuk Berpartisipasi Dalam Kemajuan Website Ini, Terimakasih :D </p>
+    <div class="popup-buttons">
+      <button id="close-popup" class="popup-button">Tutup</button>
+      <a href="https://sociabuzz.com/lenwy/tribe" target="_blank" class="popup-button donate">Donasi</a>
+    </div>
+  </div>
+
+  <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+</head>
+<body>
+<div class="container">
+  <h1>Lenwy API</h1>
+  <p>Hi, Lenwy API Merupakan Sebuah Website Yang Menyediakan REST API Gratis</p>
+  
+  <span class="section__subtitle">01</span>
+  <h2 class="centered-title">Informasi</h2>
+  <div class="work__card mix apps sites">
+    <h3 class="work__title"><b>Waktu</b></h3>
+    <div class="h3 mb-0 font-weight-bold" id="jam"></div>
+    <br>
+    <h3 class="work__title"><b>Tanggal</b></h3>
+    <div class="h5 mb-0 font-weight-bold" id="tanggal"></div>
+    <br>
+  </div>
+
+  <span class="section__subtitle">02</span>
+  <h2 class="centered-title">Daftar REST API</h2>
+  
+  <!-- Folder AI -->
+  <div class="folder" onclick="toggleFolder('folder1', this)">
+    <h3 class="folder-title">Ai</h3>
+    <span class="icon">▶</span>
+  </div>
+  
+  <!-- Folder Items AI -->
+  <div id="folder1" class="folder-items">
+    <div class="btn-container"> 
+
+    <div class="btn">
+      <div class="btn-link">/blackboxai</div>
+      <span class="desc-endpoint">Chat Dengan BlackboxAI</span>
+      <a href="/blackboxai?text=hai" class="btn-link">Try</a>
+    </div>
+
+    <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+    <div class="btn">
+      <div class="btn-link">/luminai</div>
+      <span class="desc-endpoint">Chat Dengan LuminAI</span>
+      <a href="/luminai?text=hai" class="btn-link">Try</a>
+    </div>
+
+    <div class="btn">
+      <div class="btn-link">/thinkanyai</div>
+      <span class="desc-endpoint">Chat Dengan ThinkanyAI</span>
+      <a href="/thinkany?text=hai" class="btn-link">Try</a>
+    </div>
+
+  </div>
+</div>
+
+   <!-- Folder Berita -->
+   <div class="folder" onclick="toggleFolder('folder2', this)">
+    <h3 class="folder-title">Berita</h3>
+    <span class="icon">▶</span>
+  </div>
+
+    <!-- Folder Items Berita -->
+    <div id="folder2" class="folder-items">
+      <div class="btn-container">
+
+        <div class="btn">
+          <div class="btn-link">/api/liputan6</div>
+          <span class="desc-endpoint">Dapatkan Berita Terkini Dari Liputan6</span>
+          <a href="/liputan6" class="btn-link">Try</a>
+        </div>
+
+      </div>
+    </div> 
+
+  <!-- Folder Downloader -->
+      <div class="folder" onclick="toggleFolder('folder3', this)">
+    <h3 class="folder-title">Downloader</h3>
+    <span class="icon">▶</span>
+  </div>
+
+    <!-- Folder Items Downloader -->
+    <div id="folder3" class="folder-items">
+      <div class="btn-container">
+
+      </div>
+    </div>
+
+    <!-- Folder Search -->
+    <div class="folder" onclick="toggleFolder('folder4', this)">
+      <h3 class="folder-title">Search</h3>
+      <span class="icon">▶</span>
+    </div>
+  
+      <!-- Folder Items Search -->
+      <div id="folder4" class="folder-items">
+        <div class="btn-container">
+
+          <div class="btn">
+            <div class="btn-link">/caribuku</div>
+            <span class="desc-endpoint">Cari Informasi Mengenai Buku</span>
+            <a href="/caribuku?search=nabawiyah" class="btn-link">Try</a>
+          </div>
+
+          <div class="btn">
+            <div class="btn-link">/jadwalsholat</div>
+            <span class="desc-endpoint">Cari Jadwal Sholat Dari Setiap Daerah</span>
+            <a href="/jadwalsholat?search=" class="btn-link">Try</a>
+          </div>
+
+          <div class="btn">
+            <div class="btn-link">/rumaysho</div>
+            <span class="desc-endpoint">Cari Informasi Tafsir Dari RumaySho</span>
+            <a href="/rumaysho?search=" class="btn-link">Try</a>
+          </div>
+
+          <div class="btn">
+            <div class="btn-link">/surah</div>
+            <span class="desc-endpoint">Cari Surah Dalam Alquran</span>
+            <a href="/surah?search=" class="btn-link">Try</a>
+          </div>
+
+          <div class="btn">
+            <div class="btn-link">/ypia</div>
+            <span class="desc-endpoint">Cari Informasi Tafsir Dari Ypia</span>
+            <a href="/ypia?search=" class="btn-link">Try</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+ <span class="section__subtitle">03</span>    
+ <h2>Penggunaan</h2>
+  <p>Untuk Menggunakan End Point, Kirim Sebuah Permintaan GET kepada End Point yang Diinginkan Dengan Diikuti Parameter Berikut :</p>
+  <ul>
+    <pre>
+
+message: Isi Permintaan Kamu
+    </pre>
+  </ul>
+
+  <span class="section__subtitle">04</span>
+  <h2>Respon</h2>
+  <p>Respon Yang Diberikan Berupa Format JSON Dengan Struktur :</p>
+  <pre>
+{
+  "status": 200,
+  "creator": "Lenwy",
+  "data": {
+    "response": "Hasil Respon Permintaan Kamu"
+  }
+}
+  </pre>
+
+<span class="section__subtitle">05</span>
+<h2>Implemetasi</h2>
+<p>Berikut Merupakan Contoh implementasi Dalam Bentuk Case :</p>
+
+<pre id="codeBlock">
+case 'ai4': {
+if (!q) return lenwyreply(`☘️ *Mau Nanya Apa Sama Ai4Chat?*`)
+if (text.length > 500) return lenwyreply(`☘️ *Maksimal 500 Karakter*`)
+lenwyreply('☘️ *Sabar Yaa*')
+var lenwyai = await fetchJson(`https://api-lenwy.vercel.app/ai4chat?text=${q}`)
+var lenai = lenwyai.data
+await lenwyreply(lenai)
+}
+break
+</pre>
+
+<!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+<!-- Tombol Copy -->
+<button class="copy-btn"  id="copyButton">Copy</button>
+<div id="copyPopup" class="popup2">Berhasil Disalin</div>
+
+<a href="https://sociabuzz.com/lenwy/tribe" class="circle-button">
+  <img src="https://widipe.com/file/1Kzkads4ziLz.png" alt="Icon" class="icon">
+</a>
+
+<!-- https://widipe.com/file/1Kzkads4ziLz.png -->
+
+<span class="section__subtitle">06</span>
+<h2>Informasi Tambahan</h2>
+<p>Website REST API Ini Masih Dalam Tahap Perkembangan (BETA), Mohon Untuk Memaklumi Segala Kekurangannya, Terimakasih :D</p>
+  </div>
+</div>
+</div>
+
+<h6>Copyright © 2024 Lenwy</h6>
+
+<script src="script.js"></script>
+
+</body>
+</html>

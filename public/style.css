@@ -1,0 +1,369 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 400px;
+  padding: 20px;
+  background-color: #191c31;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: #000018;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+}
+
+.popup.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end; /* Posisi Tombol */
+  gap: 10px; /* Jarak Tombol */
+}
+
+.popup-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.popup-button:hover {
+  background-color: #5a6268;
+}
+
+.popup-button.donate {
+  background-color: #28a745;
+}
+
+.popup-button.donate:hover {
+  background-color: #218838;
+}
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-backdrop.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000018;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-width: 5px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    background-color: #000018;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+
+  h2 {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  h6 {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #6c757d;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  pre {
+    background-color: #191c31;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+
+  .btn-container {
+    margin-bottom: 20px;
+    background-color: #191c31;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .work__card {
+    background-color: #191c31;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 10px;
+  }
+
+  .work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+  }
+
+  /* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    background-color: #191c31;
+    color: #fff;
+    border: none;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  /* Teks Dalam Container */
+  .desc-endpoint {
+  margin-left: 10px;
+  color: #6c757d;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+  .btn-text {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .btn-link {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .folder {
+    cursor: pointer;
+    background-color: #282c3f;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .folder-items {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  .icon {
+    font-size: 20px;
+    width: 380px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .rotated {
+    transform: rotate(90deg);
+  }
+  
+  .open {
+  max-height: none; /* Batas Folder */
+  opacity: 1;
+  }
+
+  .section-spacing {
+    margin-top: 60px;
+  }
+  .large-spacing {
+    margin-top: 100px;
+  }
+  .section__subtitle {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .centered-title {
+    text-align: center;
+  }
+
+  @media (min-width: 480px) {
+    .container {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+  .copy-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .copy-btn:hover {
+    background-color: #45a049;
+  }
+
+
+  .popup2 {
+  visibility: hidden;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Tambahkan delay pada visibility */
+}
+
+.popup2.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Animasi muncul */
+}
+
+.popup2.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Animasi menghilang */
+}
+
+.circle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.circle-button:hover {
+    background-color: #45a049;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
+@keyframes vibrate {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(2px, -2px);
+    }
+    60% {
+        transform: translate(-2px, -2px);
+    }
+    80% {
+        transform: translate(2px, 2px);
+    }
+}
